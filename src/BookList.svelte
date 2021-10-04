@@ -28,7 +28,7 @@
     };
 
     async function getBookData() {
-        const res = await fetch("http://localhost:3000/me/books");
+        const res = await fetch("/me/books");
         const books = await res.json();
         rawBookData = books;
 
